@@ -237,6 +237,18 @@ section { padding-block: var(--section-padding); }
     linear-gradient(135deg, transparent 48%, rgba(17,17,17,0.08) 49%, rgba(17,17,17,0.08) 51%, transparent 52%);
 }
 .img-placeholder--tall { aspect-ratio: 3 / 4; }
+
+/* ---------- Real media (photos/videos) ---------- */
+.media-frame {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius);
+  display: block;
+  background: var(--color-black);
+}
+.media-frame--tall { aspect-ratio: 3 / 4; }
+
 .img-placeholder__label {
   font-size: 0.78rem;
   font-weight: 600;
@@ -282,6 +294,38 @@ section { padding-block: var(--section-padding); }
 .about-content h2 { margin-bottom: 1.3rem; }
 .about-content p { color: #3a3a3a; margin-bottom: 1.1rem; max-width: 560px; }
 .about-content .btn { margin-top: 0.8rem; }
+
+/* ---------- Antes e Depois ---------- */
+.before-after-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.before-after-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+.before-after-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+.before-after-item:hover img { transform: scale(1.04); }
+.before-after-item figcaption {
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline-start: 0;
+  padding: 0.6rem 1.15rem;
+  background: rgba(17, 17, 17, 0.75);
+  color: var(--color-white);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
 
 /* ---------- Services ---------- */
 .services { background: var(--color-gray); }
@@ -524,6 +568,7 @@ section { padding-block: var(--section-padding); }
 
   .services-grid { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
+  .before-after-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 560px) {
