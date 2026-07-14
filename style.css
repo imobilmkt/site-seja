@@ -249,6 +249,22 @@ section { padding-block: var(--section-padding); }
 }
 .media-frame--tall { aspect-ratio: 3 / 4; }
 
+.hero-logo-frame {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: var(--color-gray);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+.hero-logo-img {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+}
+
 .img-placeholder__label {
   font-size: 0.78rem;
   font-weight: 600;
