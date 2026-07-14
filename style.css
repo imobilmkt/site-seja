@@ -310,7 +310,7 @@ section { padding-block: var(--section-padding); }
 }
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   text-align: center;
 }
@@ -648,6 +648,7 @@ section { padding-block: var(--section-padding); }
   .about-grid { grid-template-columns: 1fr; }
 
   .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem 1rem; }
+  .stats-grid .stat:last-child:nth-child(odd) { grid-column: 1 / -1; }
 
   .services-grid { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
