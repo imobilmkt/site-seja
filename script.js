@@ -3,9 +3,8 @@
    JavaScript puro, sem dependências.
    ========================================================================== */
 
-/* SUBSTITUIR: número de WhatsApp da empresa (apenas dígitos, com DDI + DDD) */
-const WHATSAPP_NUMBER = "55XXXXXXXXXXX";
-const WHATSAPP_MESSAGE = "Olá, vi seus serviços e quero mais informações.";
+const WHATSAPP_NUMBER = "5561999719185";
+const WHATSAPP_MESSAGE = "Olá! Vim pelo site da Seja e quero conversar sobre uma obra.";
 
 function buildWhatsAppLink() {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;

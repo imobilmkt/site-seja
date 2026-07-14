@@ -1,0 +1,30 @@
+# Seja Construtora - Brasília, DF
+# Permite indexação por buscadores e por crawlers de IA
+
+User-agent: *
+Allow: /
+
+# Crawlers de IA (ChatGPT, Claude, Perplexity, Gemini)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# SUBSTITUIR pelo domínio real quando o site for publicado
+Sitemap: https://www.seuwebsite.com.br/sitemap.xml
