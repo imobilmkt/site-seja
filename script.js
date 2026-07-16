@@ -3,7 +3,7 @@
    JavaScript puro, sem dependências.
    ========================================================================== */
 
-const WHATSAPP_NUMBER = "5561999719185";
+const WHATSAPP_NUMBER = "5561998377042";
 const WHATSAPP_MESSAGE = "Olá! Vim pelo site da Seja e quero conversar sobre uma obra.";
 
 function buildWhatsAppLink() {
